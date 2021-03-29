@@ -1,0 +1,27 @@
+package operatörler;
+import java.util.Scanner;
+
+//HOW TO WE ADD TWO INTEGERS İN JAVA?
+
+
+
+public class ProgramToAddTwoIntegers {
+
+	public static void main(String[] args) {
+		try (Scanner scan = new Scanner(System.in)) {
+			System.out.println("Please enter two numbers:");
+			int number1=scan.nextInt(); //you will enter number1
+			int number2=scan.nextInt(); // you will enter number2
+			System.out.println(number1 + " " + number2); 
+			int sum=number1+number2;
+			System.out.println("sum is :" + sum);
+		}
+		
+		//İN THİS PROGRAM TWO İNTEGERS 2 AND 3 ARE STORED İN İNTEGER  VARİABLES  number1 and number2.
+		//THEN number1 and number2 	 ARE ADDED  USİNG + OPERATOR , AND İTS RESULT  İS STORED  İN ANOTHER VARİABLE  sum.
+		//FİNALLY SUM İS PRİNTED  ON THE SCREEN USİNG println() FUNCTİON.
+		
+
+	}
+
+}
