@@ -1,0 +1,44 @@
+//In this program, you'll learn type casting  in Java. 
+//This is done using type-casting and normal variable assignment operations.
+
+
+	  long num4=12343L;
+		double num3=2.14d;
+		float num2=2.13f;
+		byte num1=1;
+		char character='a';
+		int asciiNumberOfCharacter;	
+    int variable;	
+    
+		asciiNumberOfCharacter=character; //directly we can assign char value to int variable.
+		asciiNumberOfCharacter=(int)character; // we can convert char value to int and we can assign to int variable. 
+		System.out.println("ascii value of character 'a' is : " + asciiNumberOfCharacter);
+    
+    //OUTPUT İS : 97
+    
+    
+    
+			
+		//small data types can directly assign to big data types . but big data types should be converted and then assign to small data types.
+	
+		variable =num1; //directly we can assign byte value to int variable.
+		System.out.println("result :" + variable);
+    
+		variable=(int)num1; //we can convert byte value to int and we can assign to int variable.
+		System.out.println("result :" + variable);
+    
+    
+		//variable = num2 // compile error!
+		variable=(int)num2; // we cannot directly assign float value to int variable. we should  do type casting from float to int.	
+		System.out.println("result :" + variable);
+    
+    
+		//Variable = num3 // compile error!
+		variable=(int)num3; //wecannot directly assign double value to int variable . we should do type casting  from double to int.
+		System.out.println("result :" + variable);
+    
+    
+		//variable = num4 // compile error!
+		variable=(int)num4; // we cannot directly asssign long value to int . we should do type casting from long to int . 
+		System.out.println("result :" + variable);
+	
